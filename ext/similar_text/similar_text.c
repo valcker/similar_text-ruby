@@ -58,16 +58,30 @@ int similar_text(const char *txt1, const char *txt2, double *percent)
 static VALUE t_similar(VALUE str1, VALUE str2)
 {
   double percent;
-  int sim;
 
-  sim = similar_text(StringValueCStr(str1), StringValueCStr(str2), &percent);
+  similar_text(StringValueCStr(str1), StringValueCStr(str2), &percent);
 
   return rb_float_new(percent);
+}
+
+static VALUE t_similar_bool(VALUE str1, VALUE str2)
+{
+  double percent;
+
+  similar_text(StringValueCStr(str1), StringValueCStr(str2), &percent);
+
+  if (percent == 100.0) {
+    return Qtrue;
+  }
+  else {
+    return Qfalse;
+  }
 }
 
 void Init_similar_text()
 {
   rb_cString = rb_define_class("String", rb_cObject);
   rb_define_method(rb_cString, "similar", t_similar, 1);
+  rb_define_method(rb_cString, "similar?", t_similar_bool, 1);
 }
 
