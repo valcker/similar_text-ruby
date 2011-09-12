@@ -1,9 +1,6 @@
 Ruby similar_text
 =================
 
-DESCRIPTION
-===========
-
 Port of PHP similar_text function to Ruby, built as a native extension.
 
 INSTALL
