@@ -7,11 +7,13 @@ Gem::Specification.new do |s|
   s.version     = SimilarText::VERSION
   s.authors     = ["Arthur Murauskas"]
   s.email       = ["arthur.murauskas@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{Analogue of the similar_text function in PHP}
-  s.description = %q{Analogue of the similar_text function in PHP}
+  s.homepage    = "http://github.com/valcker/similar_text-ruby"
+  s.summary     = %q{Port of PHP function similar_text to Ruby as a native extension. Adds methods similar and similar? to core String class.}
+  s.description = %q{Port of PHP function similar_text to Ruby as a native extension. Adds methods similar and similar? to core String class.}
 
   s.rubyforge_project = "similar_text"
+  
+  s.extra_rdoc_files = ['README.markdown', 'CHANGELOG.rdoc']
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

@@ -1,0 +1,4 @@
+== 0.0.1, released 2011-09-12
+
+* Extended core String class by adding two methods: similar and similar?
+
