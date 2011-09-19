@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Arthur Murauskas"]
   s.email       = ["arthur.murauskas@gmail.com"]
   s.homepage    = "http://github.com/valcker/similar_text-ruby"
-  s.summary     = %q{Port of PHP function similar_text to Ruby as a native extension. Adds methods similar and similar? to core String class.}
-  s.description = %q{Port of PHP function similar_text to Ruby as a native extension. Adds methods similar and similar? to core String class.}
+  s.summary     = %q{Port of PHP function similar_text to Ruby as a native extension. Adds methods similar and similar_chars to core String class.}
+  s.description = %q{Port of PHP function similar_text to Ruby as a native extension. Adds methods similar and similar_chars to core String class.}
 
   s.rubyforge_project = "similar_text"
   
