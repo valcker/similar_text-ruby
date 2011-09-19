@@ -74,6 +74,8 @@ static VALUE t_similar(VALUE str1, VALUE str2)
 /**
  * Calculate the similarity between strings.
  *
+ * 'Hello WORLD!'.similar_chars 'Hello, World!' #=> 8
+ *
  * @return number of matching chars between strings.
  */
 static VALUE t_similar_chars(VALUE str1, VALUE str2)
