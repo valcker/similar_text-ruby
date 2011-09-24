@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "similar_text"
   
   s.extra_rdoc_files = ['README.markdown', 'CHANGELOG.rdoc']
+  s.rdoc_options = ['-m', 'README.markdown', '-x', 'lib/similar_text/version.rb']
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
