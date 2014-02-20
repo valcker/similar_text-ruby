@@ -26,3 +26,7 @@ And use it by calling one of two methods (similar or similar_chars):
 	"Hello, World!".similar("Hello World!") #=> 96.0
 	"Hello, World!".similar_chars("Hello World!") #=> 12
 
+LICENSE
+=======
+
+BSD simplified license.
